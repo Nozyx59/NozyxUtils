@@ -6,7 +6,7 @@
 
     <groupId>fr.nozyx</groupId>
     <artifactId>NozyxUtils</artifactId>
-    <version>2023.04.30</version>
+    <version>1.0.0</version>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
