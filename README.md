@@ -1,6 +1,8 @@
 # NozyxUtils
 NozyxUtils is a Java library create to help developers by making tasks easier to use.
-## **_WARNING_ ! To use NozyxUtils, you must use Java 1.8.0 or higher.**
+```diff
+- **_WARNING_ ! To use NozyxUtils, you must use Java 1.8.0 or higher.**
+```
 
 # Installation:
 ## ***Maven :***
@@ -42,3 +44,5 @@ dependencies {
     implementation "fr.nozyx:nozyxutils:THE_VERSION_YOU_WANT"
 }
 ```
+
+### `NozyxUtils` by [Nozyx](https://nozyx59.github.io)
