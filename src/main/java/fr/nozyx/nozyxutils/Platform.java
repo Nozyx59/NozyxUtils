@@ -2,38 +2,30 @@ package fr.nozyx.nozyxutils;
 
 public class Platform {
     public static boolean isWindows() {
-        if (getOSName().contains("windows") || getOSName().contains("win")) return true;
-
-        return false;
+        return getOSName().contains("windows") || getOSName().contains("win");
     }
 
     public static boolean isMac() {
-        if (getOSName().contains("mac") || getOSName().contains("osx") || getOSName().contains("macos") || getOSName().contains("darwin")) return true;
-
-        return false;
+        return getOSName().contains("mac") || getOSName().contains("osx") || getOSName().contains("macos") || getOSName().contains("darwin");
     }
 
     public static boolean isLinux() {
-        if (getOSName().contains("linux") || getOSName().contains("unix")) return true;
-
-        return false;
+        return getOSName().contains("linux") || getOSName().contains("unix");
     }
 
     public static boolean isSolaris() {
-        if (getOSName().contains("sun") || getOSName().contains("sunos")) return true;
-
-        return false;
+        return getOSName().contains("sun") || getOSName().contains("sunos");
     }
 
     public static String getOSName() {
-        return System.getProperty("os.name").toLowerCase();
+        return SystemProperty.get("os.name").toLowerCase();
     }
 
     public static String getOSVersion() {
-        return System.getProperty("os.version");
+        return SystemProperty.get("os.version");
     }
 
     public static String getArchitecture() {
-        return System.getProperty("os.arch");
+        return SystemProperty.get("os.arch");
     }
 }
